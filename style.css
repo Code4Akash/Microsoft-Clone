@@ -11,3 +11,8 @@ input:checked~.menu-btn i::before {
 input:checked ~.features {
     display: block; 
 }
+
+.container{
+    width: 92%;
+    margin: 0 auto;
+}
