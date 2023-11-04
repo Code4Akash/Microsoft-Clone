@@ -2,17 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.features{
-    @apply text-left bg-blue-200 md:bg-white md:flex list-none md:space-x-6 md:mx-7 text-sm cursor-pointer absolute inset-0 translate-y-14 md:translate-y-0 md:static hidden
-}
 input:checked~.menu-btn i::before {
-    content: "\f00d";
-  }
-input:checked ~.features {
-    display: block; 
+  content: "\f00d";
+}
+input:checked ~.features{
+  display: block; 
 }
 
+.features{
+    @apply text-left hidden bg-blue-200 md:bg-white md:flex list-none md:space-x-6 md:mx-7 text-sm cursor-pointer absolute inset-0 translate-y-14 md:translate-y-0 md:static
+}
 .container{
-    width: 92%;
-    margin: 0 auto;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.product-btn{
+  @apply text-blue-600 font-medium
 }
